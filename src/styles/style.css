@@ -1,0 +1,339 @@
+/*# sourceMappingURL=style.css.map */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #00cec9, #00cec9 50%, #81ecec 50%, #81ecec);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.couleur-joueur {
+    color: rgb(21, 122, 119);
+}
+
+.partie {
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.button-new-partie {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* utilise RGBA pour spécifier la couleur du fond avec une opacité de 50% */
+    border: none;
+    border-radius: 6px;
+    color: #157a77;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Lato';
+}
+
+.player-actif-one {
+    display: none;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #81ecec;
+
+}
+
+.player-actif-two {
+    display: none;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #00cec9;
+
+}
+
+.player1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.player2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.global {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#roll-dice.dice {
+    margin-top: 8rem;
+}
+
+.dice {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    margin: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* utilise RGBA pour spécifier la couleur du fond avec une opacité de 50% */
+    border: none;
+    border-radius: 6px;
+    color: #157a77;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.round-dé-hold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 14rem;
+}
+
+.dé-hold {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.round-j1 {
+    padding: 3rem;
+    font-size: 3rem;
+    margin-top: 5rem;
+    background-color: #157a77;
+    color: white;
+}
+
+.round-j2 {
+    padding: 3rem;
+    font-size: 3rem;
+    background-color: #157a77;
+    color: white;
+}
+
+/* MODALE */
+
+.container-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-modal {
+    background-color: white;
+    border: none;
+    color: #157a77;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 6rem;
+    cursor: pointer;
+    font-family: 'Leto';
+
+}
+
+.règle-h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: 'Lato';
+}
+
+.règle-p {
+    text-align: left;
+    margin: 3rem;
+    font-family: 'Lato';
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    width: 80%;
+    height: auto;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    overflow: hidden;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#svg-de {
+    fill: white;
+    border: #1b9795;
+    width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    h2.couleur-joueur {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        background: linear-gradient(to bottom, #00cec9, #00cec9 50%, #81ecec 50%, #81ecec);
+    }
+
+    .bouton-de-jeu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .partie {
+        margin: 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .round-j1 {
+        width: 222px;
+        height: 160px;
+        font-size: 2rem;
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #roll-dice.dice {
+        margin: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .players {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player1 {
+        background-color: #00cec9
+    }
+
+    .player2 {
+        background-color: #81ecec;
+    }
+
+    .fa-regular.fa-plus.fa-lg::before {
+        display: none;
+    }
+
+    .round-j1 {
+        padding: 2rem;
+    }
+
+    .button-new-partie {
+        margin: 0px;
+    }
+
+    .btn-modal {
+        margin: 0px;
+    }
+
+    .partie {
+        background-color: none;
+    }
+
+    .dé-hold {
+        margin: 0px;
+    }
+
+    button#btn-roll-dice.btn-lancer {
+        width: 175px;
+        height: 80px;
+    }
+}
